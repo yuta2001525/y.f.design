@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  color: #222;
+  line-height: 1.7;
+  background: #f7f7f7;
+}
+
+/* header */
+.header {
+  text-align: center;
+  padding: 24px 16px;
+  background: #eee;
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  z-index: 1000;
+
+}
+
+.logo {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.nav a {
+  font-size: 1.5rem;
+  margin: 0 6px;
+  color: #555;
+  text-decoration: none;
+   position: relative;
+  padding: 0 12px;
+
+}
+
+/* 最後以外に縦線 */
+.nav a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: #999; /* 薄めで上品 */
+}
+
+
+/* hero */
+
+.hero {
+  margin-top: 10rem;
+  text-align: center;
+  padding: 7rem 16px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: #6b8f8a;
+  color: #fff;
+  margin: 3rem;
+  padding: 10px 24px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* works */
+#works{
+  scroll-margin-top: 10rem;
+}
+.works {
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.wpc{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+ 
+
+
+.work-title {
+  font-size: 1rem;
+  display: flex;
+  justify-content: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.work-item img {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 260px;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.teampaz{
+  margin-bottom: 2rem;
+}
+
+.price{
+  margin-top: 2rem;
+  text-align: center;
+}
+.price h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+/*price*/
+#price{
+  scroll-margin-top: 10rem;
+}
+
+/*コンタクト*/
+#contact{
+  scroll-margin-top: 10rem;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 8px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  line-height: 1rem;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: #111;
+  color: #fff;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+.instagram-link {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.instagram-link p {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.instagram-link a {
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.instagram-link a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
