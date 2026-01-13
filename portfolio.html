@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>yuta.design</title>
+  <meta name="description" content="yuta.designの紹介">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- reset -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="yutadesign.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1 class="site-title">y.f.design</h1>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="sp-menu" id="spMenu">
+    <ul>
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">サービス</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-img">
+      <img src="images/back.jpg" alt="サーフィン写真">
+    </div>
+    <div class="hero-ii">
+      <img src="images/back2.png" alt="トップ写真">
+    </div>
+
+    <div class="hero-text">
+      <div class="hero-text-inner">
+      <h2 class="sub-title">Web Designer</h2>
+      <p class="pc-only">宮崎 / フリーランス</p>
+
+      <div class="lp-ec">
+        <p>LP・コーポレート・EC対応</p>
+        <p>デザインから実装まで一貫対応</p>
+       
+      </div>
+
+      <a href="#" class="soudan">無料で相談する</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <small>&copy; 2025 yuta.design</small>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const spMenu = document.getElementById('spMenu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  spMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
+

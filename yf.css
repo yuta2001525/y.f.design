@@ -115,15 +115,19 @@ body {
   justify-content: left;
   margin-left: 1rem;
   margin-bottom: 1rem;
+ 
 }
 
 .work-item img {
   display: block;
   margin: 2rem auto;
-  width: 100%;
-  max-width: 260px;
   border-radius: 6px;
   margin-top: 1rem;
+   width: 100%;
+  max-width: 260px;
+}
+ .work-item img {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .teampaz{
@@ -216,7 +220,123 @@ body {
   opacity: 0.7;
 }
 
+@media(min-width:1024px){
+
+  .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+  }
+  .logo{
+    font-size: 2.5rem;
+  }
+  .nav{
+    margin-right: 3.5rem;
+  }
+  .nav a{
+    font-size: 2rem;
+  }
+  
+  .hero h2{
+    font-size: 3.5rem;
+    padding-top:2.5rem ;
+  }
+  .hero p{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  .btn{
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .wpc{
+    font-size: 3rem;
+  }
+  .work-title{
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+   .yoko{
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+  }
+  .work-item img.img-pc{
+    max-width: none;
+    width: 800px;
+    height: auto;
+  }
+  
+  .img-sp{
+    width: 200px;
+    height: auto;
+  }
+
+  .work-item p{
+    font-size: 1.5rem;
+  }
+ .work-item a{
+  font-size: 2rem;
+ }
+.price h3{
+  font-size: 2rem;
+}
+.price h4{
+  font-size: 1.5rem;
+}
+.price p{
+  font-size: 1.5rem;
+}
 
 
 
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 8px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: #111;
+  color: #fff;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+ 
+
+    
+}
 
